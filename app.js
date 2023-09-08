@@ -24,13 +24,13 @@ function timerInterval () {
         clickInfo.textContent = num
         setTimeout(() => {
             resBtn.style = 'display: flex;'
-        },1)
+        },1300)
         clearInterval(interval)
         results.insertAdjacentHTML('beforeend', `
         <p><span>${newNums + ':'}
         ${clickInfo.textContent}</span></p>`)
     }
-},1)
+},1000)
 }
 
 timerInterval()
